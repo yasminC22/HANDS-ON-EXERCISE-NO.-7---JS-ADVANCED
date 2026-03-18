@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 3 - API Loader</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 20px;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+        }
+
+        .controls {
+            margin-bottom: 20px;
+        }
+
+
+        button {
+            padding: 5px 15px;
+            font-size: 14px;
+            cursor: pointer;
+            border: 1px solid #767676;
+            border-radius: 3px;
+            background-color: #efefef;
+            margin-right: 5px;
+        }
+
+        button:hover {
+            background-color: #e5e5e5;
+        }
+
+        .api-info {
+            margin: 15px 0;
+            font-size: 1rem;
+        }
+
+        .api-info a {
+            color: #0000EE;
+            text-decoration: underline;
+        }
+
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            margin-top: 10px;
+            border: 1px solid #333; 
+        }
+
+        th, td {
+            border: 1px solid #333; 
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #ffffff;
+            font-weight: bold;
+        }
+
+        .center-text {
+            text-align: center;
+            width: 80px;
+        }
+        
+        .status-completed {
+            color: green;
+            font-weight: normal;
+        }
+
+        .status-pending {
+            color: red;
+            font-weight: normal;
+        }
+
+        #output {
+            margin-top: 20px;
+        }
+
+
+        .analysis-box {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #fff;
+            border: 1px dashed #999;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>JS Web Output #3</h1>
+
+    <div class="controls">
+        <button id="loadBtn">Load data from the API</button>
+        <button id="clearBtn">Clear Table</button>
+        
+        <div class="api-info">
+            <strong>API:</strong> 
+            <a href="https://jsonplaceholder.typicode.com/todos" target="_blank">https://jsonplaceholder.typicode.com/todos</a>
+        </div>
+    </div>
+
+    <div id="output">
+        <p>Waiting for the user input...</p>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
